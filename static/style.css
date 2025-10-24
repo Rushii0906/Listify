@@ -1,0 +1,190 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #0d0d2b, #1e1e40);
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-glass {
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dashboard Layout */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.left-column, .right-column {
+  flex: 1 1 400px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.todo-form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.todo-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.todo-form input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.todo-form button {
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+  border: none;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.todo-form button:hover {
+  transform: scale(1.05);
+}
+
+/* Table Section */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.todo-list {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Completed Todos */
+.completed td {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Button Base */
+.btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Mark Done Button */
+.btn.toggle {
+  background: linear-gradient(135deg, #00ffab, #00c2ff);
+  color: black;
+}
+
+.btn.toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 255, 171, 0.5);
+}
+
+/* Delete Button */
+.btn.delete {
+  background: linear-gradient(135deg, #ff4d4d, #ff1a75);
+  color: white;
+}
+
+.btn.delete:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 26, 117, 0.5);
+}
+
+/* Chart Size Fix */
+#progressChart {
+  max-width: 280px;
+  max-height: 280px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive Chart */
+@media (max-width: 600px) {
+  #progressChart {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+/* Empty State */
+.empty-state {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 20px;
+}
+
