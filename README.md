@@ -21,14 +21,6 @@ A clean, responsive Todo List web application built with Flask. This app lets yo
 - **Frontend:** HTML5, CSS3, JavaScript
 - **Libraries:** Chart.js (for progress pie chart), datetime, Flask-SQLAlchemy
 
----
-
-## 📷 Screenshots
-
-> *(Add screenshots or GIFs of your app here if available)*
-
----
-
 ## 🔧 Getting Started
 
 Follow the steps below to run this project locally.
